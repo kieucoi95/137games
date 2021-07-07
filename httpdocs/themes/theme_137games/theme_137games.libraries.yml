@@ -7,6 +7,10 @@ global-styling-and-scripts:
   js:
     libraries/bootstrap/js/bootstrap.min.js: {}
     js/script.js: {}
+  dependencies:
+    - core/drupal
+    - core/drupalSettings
+    - core/jquery
 
 swiper:
   css:

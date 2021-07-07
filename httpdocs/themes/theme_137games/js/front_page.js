@@ -2,6 +2,7 @@ var $ = jQuery;
 
 $(document).ready(function () {
   var banner_home = new Swiper("#home_banner", {
+    speed: 500,
     autoplay: {
       delay: 6000,
       disableOnInteraction: false,
