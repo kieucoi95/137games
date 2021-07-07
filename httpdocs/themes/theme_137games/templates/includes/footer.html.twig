@@ -1,0 +1,28 @@
+<footer>
+  <div class="container">
+    <div class="ft-content">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="ft-logo"><img src="{{ logo }}" alt="logo"></div>
+          <div class="ft-desc">{{ drupal_entity('block', 'footer') }}</div>
+        </div>
+        <div class="col-md-3">
+          <div class="link-ft">
+            {{ drupal_menu('main-menu') }}
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="link-ft">
+            {{ drupal_menu('menu-footer') }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <div class="copyright">{{ drupal_entity('block', 'copyright') }}</div>
+      <div class="social"></div>
+    </div>
+    </div>
+</footer>

@@ -1,0 +1,13 @@
+name: 137games theme
+type: theme
+description: 'Kieu Nghiem build.'
+base theme: bartik
+core: 8.x
+package: theme_137games
+version: 1.1
+libraries:
+  - theme_137games/global-styling-and-scripts
+regions:
+  header: Header
+  content: 'Content'
+  footer: 'Footer'

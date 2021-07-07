@@ -1,0 +1,30 @@
+global-styling-and-scripts:
+  version: VERSION
+  css:
+    theme:
+      libraries/bootstrap/css/bootstrap.min.css: {}
+      css/style.css: {}
+  js:
+    libraries/bootstrap/js/bootstrap.min.js: {}
+    js/script.js: {}
+
+swiper:
+  css:
+    theme:
+      libraries/swiper/swiper-bundle.css: {}
+  js:
+    libraries/swiper/swiper-bundle.js: {}
+
+aos:
+  css:
+    theme:
+      libraries/aos/aos.css: {}
+  js:
+    libraries/aos/aos.js: {}
+
+front_page:
+  css:
+    theme:
+      css/front_page.css: {}
+  js:
+    js/front_page.js: {}
