@@ -215,6 +215,8 @@
 #section3 .swiper-slide .img {
   margin-right: 30px;
   width: 150px;
+  padding: 10px;
+  border: 1px #ffffff75 solid;
 }
 
 #section3 .swiper-slide .inner {
