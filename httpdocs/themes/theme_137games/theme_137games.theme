@@ -43,6 +43,7 @@ function theme_137games_preprocess_node(&$variables) {
  * Implements hook_preprocess_HOOK() for block.html.twig.
  */
 function theme_137games_preprocess_block(&$variables) {
+  $variables['base_path'] = base_path();
   $content = $variables['elements']['content'];
   if (isset($content['#block_content']) && $content['#block_content'] instanceof BlockContentInterface) {
     $blockType = $content['#block_content']->bundle();
@@ -65,6 +66,28 @@ function theme_137games_preprocess_block(&$variables) {
         }
       }
     }
+
+    // Home our team
+    if ($blockType === 'home_our_team') {
+      $variables['items'] = [];
+      foreach ($content['field_our_team'] as $key => $value) {
+        if (is_numeric($key)) {
+          $name = $value['#paragraph']->field_name->getValue()[0]['value'];
+          $position = $value['#paragraph']->field_position->getValue()[0]['value'];
+          $quote = $value['#paragraph']->field_quote->getValue()[0]['value'];
+          $img_id = $value['#paragraph']->field_image->getValue()[0]['target_id'];
+          $img_id = File::load($img_id);
+          $img_uri = $img_id->getFileUri();
+          $variables['items'][] = [
+            'name' => $name,
+            'position' => $position,
+            'quote' => $quote,
+            'img' => $img_uri
+          ];
+        }
+      }
+    }
+
 
   }
 }

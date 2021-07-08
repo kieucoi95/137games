@@ -13,4 +13,21 @@ $(document).ready(function () {
       prevEl: ".swiper-button-prev",
     },
   });
+  var home_our_team = new Swiper("#home_our_team", {
+    speed: 500,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false,
+    },
+    effect: 'fade',
+    loop: true,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
 });
