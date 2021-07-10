@@ -32,3 +32,18 @@ front_page:
       css/front_page.css: {}
   js:
     js/front_page.js: {}
+
+games_teaser:
+  css:
+    theme:
+      css/games_teaser.css: {}
+
+games_full:
+  css:
+    theme:
+      css/games_full.css: {}
+
+games_list:
+  css:
+    theme:
+      css/games_list.css: {}

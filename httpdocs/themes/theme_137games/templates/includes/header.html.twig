@@ -3,7 +3,7 @@
   <div class="header-fix">
     <div class="container">
       <div class="logo">
-        <img src="{{ logo }}" alt="logo">
+        <a href="{{ url('<front>') }}"><img src="{{ logo }}" alt="logo"></a>
       </div>
       <div class="main-menu">
         {{ drupal_menu('main-menu') }}
@@ -14,7 +14,7 @@
   <div id="header">
     <div class="container">
       <div class="logo">
-        <img src="{{ logo }}" alt="logo">
+        <a href="{{ url('<front>') }}"><img src="{{ logo }}" alt="logo"></a>
       </div>
       <div class="main-menu">
         {{ drupal_menu('main-menu') }}

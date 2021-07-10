@@ -3,11 +3,11 @@
   --main-black: #000;
   --main-white: #fff;
   --main-blue: #3786ff;
-  --main-bg: #0c0a0a;
+  --main-bg: #07070f;
 }
 
 /* General */
-a, a:hover {
+a:hover, a:active, a:focus, .link:hover, .link:active, .link:focus, a {
   border: none;
   text-decoration: none;
 }
@@ -102,12 +102,36 @@ a, a:hover {
   font-weight: 700;
   text-transform: uppercase;
   margin-bottom: 1rem;
+  padding-bottom: 10px;
+  display: inline-block;
+}
+
+h2.block_title:before {
+  content: '';
+  width: 100%;
+  height: 2px;
+  background: var(--main-blue);
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 /* Header */
 .header-fix {
   position: fixed;
   top: -80px;
-  transform: 0.3s;
+  transition: .5s;
+  z-index: 9;
+  opacity: 0;
+}
+
+.header-fix.active {
+  top: 0;
+  opacity: 1;
+  border-bottom: 1px solid #302f2f;
+}
+
+.toolbar-tray-open .header-fix.active {
+  top: 80px;
 }
 
 #header, .header-fix {
@@ -167,6 +191,7 @@ header .logo img {
 footer {
   background: var(--main-black);
   padding: 50px 0 0;
+  border-top: 1px solid var(--main-blue);
 }
 
 footer .ft-content {
@@ -201,4 +226,8 @@ footer .link-ft ul li a:hover {
   background: var(--main-bg);
   color: var(--main-white);
   opacity: 0.7;
+}
+
+.ft-logo {
+  margin-bottom: 15px;
 }

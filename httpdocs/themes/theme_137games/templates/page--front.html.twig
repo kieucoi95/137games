@@ -48,6 +48,7 @@
 {{ attach_library('theme_137games/swiper') }}
 {{ attach_library('theme_137games/front_page') }}
 {{ attach_library('theme_137games/aos') }}
+{{ attach_library('theme_137games/games_teaser') }}
 {% include directory ~ '/templates/includes/header.html.twig' %}
 <main role="main">
   <div id="home-banner">
@@ -61,6 +62,15 @@
   </div>
   <div id="section3">
     {{ drupal_entity('block', 'homeourteam') }}
+  </div>
+  <div id="section4">
+    {{ drupal_entity('block', 'homepartner') }}
+  </div>
+  <div id="section5">
+    <div class="container">
+      <h2 class="block_title">{{ 'Games highlight' | t }}</h2>
+      {{ drupal_view('137games_node_functions', 'block_1') }}
+    </div>
   </div>
 </main>
 {% include directory ~ '/templates/includes/footer.html.twig' %}

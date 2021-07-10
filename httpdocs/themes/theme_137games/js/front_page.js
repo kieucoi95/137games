@@ -30,4 +30,42 @@ $(document).ready(function () {
       clickable: true,
     },
   });
+  var home_partner = new Swiper("#home_partner", {
+    speed: 500,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false,
+    },
+    loop: true,
+    slidesPerView: 5,
+    spaceBetween: 30,
+    centeredSlides: true,
+  });
+
+  // Count #section2
+  var section2_to = 0;
+  var section2 = $('#section2').offset().top;
+  $(window).scroll(function() {
+    if(($(window).scrollTop() + $(window).height()) >= section2) {
+      section2_to ++;
+    }
+    if (section2_to  == 1) {
+      count_();
+    }
+  });
+
 });
+
+function count_(e) {
+  $('.count').each(function () {
+    $(this).prop('Counter',0).animate({
+      Counter: $(this).attr('data-count')
+    }, {
+      duration: 4000,
+      easing: 'swing',
+      step: function (now) {
+        $(this).text(Math.ceil(now));
+      }
+    });
+  });
+}

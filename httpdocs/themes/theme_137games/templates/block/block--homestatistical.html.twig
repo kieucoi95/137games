@@ -42,7 +42,7 @@
             <img src="{{ base_path }}themes/theme_137games/images/download.svg" alt="download">
           </div>
           <div class="info">
-            <div class="count">{{ elements.content['#block_content'].field_download.0.value }}</div>
+            <div class="count" data-count="{{ elements.content['#block_content'].field_download.0.value }}">0</div>
             <div class="desc">{{ 'Download' | t }}</div>
           </div>
         </div>
@@ -53,7 +53,7 @@
             <img src="{{ base_path }}themes/theme_137games/images/rating.svg" alt="download">
           </div>
           <div class="info">
-            <div class="count">{{ elements.content['#block_content'].field_rate.0.value }}</div>
+            <div class="count" data-count="{{ elements.content['#block_content'].field_rate.0.value }}">0</div>
             <div class="desc">{{ 'Rate' | t }}</div>
           </div>
         </div>

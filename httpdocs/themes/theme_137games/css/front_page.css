@@ -132,8 +132,12 @@
 
 /* Section1 */
 #section1 {
-  background: var(--main-bg);
+  background: var(--main-black);
   padding: 100px 0;
+  background-image: url(../images/pattern-1-dark.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 100%;
 }
 
 #section1 .desc {
@@ -157,8 +161,7 @@
 
 /* Section2 */
 #section2 {
-  padding: 100px 0;
-  background-image: url(../images/bg_sc2.png);
+  padding: 30px 0 0;
   background-size: 100% auto;
   background-repeat: no-repeat;
   background-position: top;
@@ -168,7 +171,6 @@
 #section2 .item {
   display: flex;
   align-items: center;
-  border-bottom: 1px solid #302f2f;
   padding-bottom: 50px;
   justify-content: center;
 }
@@ -200,11 +202,19 @@
 #section3 {
   padding: 100px 0;
   background: var(--main-black);
+  background-image: url(../images/pattern-2-dark.png);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
 #section3 .block_title {
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
+}
+
+#section3 .container {
+  text-align: center;
 }
 
 #section3 .swiper-slide {
@@ -221,6 +231,7 @@
 
 #section3 .swiper-slide .inner {
   width: calc(100% - 80px);
+  text-align: left;
 }
 
 #section3 .swiper-slide .avatar {
@@ -336,4 +347,49 @@
 
 #section3 .swiper-pagination-bullet.swiper-pagination-bullet-active {
   opacity: 1;
+}
+
+/* Section4 */
+#section4 {
+  background: var(--main-bg);
+}
+
+#section4 .swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  padding: 30px;
+}
+
+#section4 .swiper-slide img {
+  max-height: 100px;
+  filter: grayscale(100%) blur(3px);
+  transition: 0.3s;
+}
+
+#section4 .swiper-slide img:hover,
+#section4 .swiper-slide.swiper-slide-active img {
+  filter: drop-shadow(16px 0 20px var(--main-blue));
+}
+
+/* Section5 */
+#section5 {
+  background: var(--main-bg);
+  padding: 50px 0 100px;
+  text-align: center;
+  border-top: 1px solid #302f2f;
+}
+
+#section5 .view-content {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+#section5 .block_title {
+  margin-bottom: 4rem;
 }
