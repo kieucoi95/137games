@@ -47,3 +47,18 @@ games_list:
   css:
     theme:
       css/games_list.css: {}
+
+blogs_list:
+  css:
+    theme:
+      css/blogs_list.css: {}
+
+contact:
+  css:
+    theme:
+      css/contact.css: {}
+
+page_banner:
+  css:
+    theme:
+      css/page_banner.css: {}

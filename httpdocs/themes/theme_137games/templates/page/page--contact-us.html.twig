@@ -45,10 +45,17 @@
  * @ingroup themeable
  */
 #}
+{{ attach_library('theme_137games/contact') }}
 {% include directory ~ '/templates/includes/header.html.twig' %}
+<div id="banner-page">
+  {{ drupal_entity('block', 'bannercontactus') }}
+</div>
 <main role="main">
   <div class="container">
-    {{ drupal_entity('webform', 'contact') }}
+    <div class="block_contact">
+      <h1 class="page_title">{{ 'Get in touch' | t }}</h1>
+      {{ drupal_entity('webform', 'contact') }}
+    </div>
   </div>
 </main>
 {% include directory ~ '/templates/includes/footer.html.twig' %}

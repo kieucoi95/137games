@@ -1,0 +1,92 @@
+.path-contact-us {
+  background: var(--main-bg);
+}
+
+h1.page_title {
+  display: block;
+  color: #ffffff;
+  font-size: 48px;
+  line-height: 1.2em;
+  letter-spacing: 0.03em;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.block_contact {
+  width: 100%;
+  max-width: 900px;
+  padding: 50px;
+  margin: 100px auto;
+  background: var(--main-black);
+}
+
+.block_contact form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.block_contact input:not(.form-submit),
+.block_contact textarea {
+  display: block;
+  width: 100%;
+  line-height: 28px;
+  height: 70px;
+  font-size: 15px;
+  padding: 20px 30px;
+  background: var(--main-bg);
+  color: var(--main-white);
+  font-weight: 400;
+  border: 1px solid rgba(255,255,255,0.10);
+  transition: all 500ms ease;
+  -webkit-transition: all 500ms ease;
+  -ms-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  border-radius: 0;
+  outline: none;
+  box-shadow: none;
+}
+
+.block_contact textarea {
+  height: 260px;
+}
+
+.block_contact input:focus,
+.block_contact input:focus-visible,
+.block_contact textarea:focus,
+.block_contact textarea:focus-visible {
+  border-color: var(--main-blue);
+}
+
+.block_contact .form-item {
+  width: 100%;
+}
+
+.block_contact .form-item-name,
+.block_contact .form-item-email {
+  width: calc(50% - 15px);
+}
+
+.block_contact #edit-actions input {
+  display: inline-block;
+  border-radius: 0;
+  box-shadow: none;
+  height: 70px;
+  background: var(--main-blue);
+  border: none;
+  text-align: center;
+  padding: 0 50px;
+  font-size: 18px;
+  color: var(--main-white);
+  outline: none;
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.block_contact #edit-actions {
+  text-align: center;
+  width: 100%;
+}

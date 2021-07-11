@@ -48,6 +48,9 @@
 {{ attach_library('theme_137games/games_teaser') }}
 {{ attach_library('theme_137games/games_list') }}
 {% include directory ~ '/templates/includes/header.html.twig' %}
+<div id="banner-page">
+  {{ drupal_entity('block', 'bannergames') }}
+</div>
 <main role="main">
   <div class="container">
     {{ drupal_view('137games_node_functions', 'page_1') }}
