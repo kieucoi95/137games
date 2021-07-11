@@ -5,7 +5,7 @@
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => 'e956b76c3e8f896e34bba3328f73971986585eb0',
+        'reference' => '3d039c2a5d33de3abbaa31530f9196b9c631a9e4',
         'name' => 'drupal/recommended-project',
         'dev' => true,
     ),
@@ -646,6 +646,15 @@
                 0 => '8.9.16',
             ),
         ),
+        'drupal/google_analytics' => array(
+            'pretty_version' => '3.1.0',
+            'version' => '3.1.0.0',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../httpdocs/modules/contrib/google_analytics',
+            'aliases' => array(),
+            'reference' => '8.x-3.1',
+            'dev_requirement' => false,
+        ),
         'drupal/hal' => array(
             'dev_requirement' => false,
             'replaced' => array(
@@ -856,7 +865,7 @@
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => 'e956b76c3e8f896e34bba3328f73971986585eb0',
+            'reference' => '3d039c2a5d33de3abbaa31530f9196b9c631a9e4',
             'dev_requirement' => false,
         ),
         'drupal/responsive_image' => array(
