@@ -38,8 +38,7 @@
 }
 
 .node_body * {
-  color: var(--main-white);
-  opacity: .7;
+  color: var(--main-text);
 }
 
 .similar_games {

@@ -12,6 +12,13 @@ global-styling-and-scripts:
     - core/drupalSettings
     - core/jquery
 
+fontawesome:
+  css:
+    theme:
+      libraries/fontawesome/css/all.min.css: {}
+  js:
+    libraries/fontawesome/js/all.min.js: {}
+
 swiper:
   css:
     theme:
@@ -52,6 +59,11 @@ blogs_list:
   css:
     theme:
       css/blogs_list.css: {}
+
+blogs_full:
+  css:
+    theme:
+      css/blogs_full.css: {}
 
 contact:
   css:

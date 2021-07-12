@@ -141,8 +141,7 @@
 }
 
 #section1 .desc {
-  color: var(--main-white);
-  opacity: 0.7;
+  color: var(--main-text);
   font-size: 18px;
   max-width: 780px;
   margin: 0 auto;
@@ -191,8 +190,7 @@
 }
 
 #section2 .desc {
-  color: var(--main-white);
-  opacity: 0.7;
+  color: var(--main-text);
   font-size: 22px;
   margin-top: 4px;
   text-align: center;
@@ -279,7 +277,7 @@
 }
 
 #section3 .swiper-slide .quote {
-  color: var(--main-white);
+  color: var(--main-text);
   font-style: italic;
   transition: 0.3s ease-in;
   opacity: 0;
@@ -287,7 +285,7 @@
 }
 
 #section3 .swiper-slide.swiper-slide-active .quote {
-  opacity: 0.7;
+  opacity: 1;
 }
 
 #section3 .swiper-slide .img img {
