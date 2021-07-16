@@ -15,3 +15,13 @@
 .view-content .views-row {
   margin-bottom: 30px;
 }
+
+@media (max-width: 480px) {
+  .view-content .views-row {
+    margin-bottom: 15px;
+  }
+
+  .view-content {
+    padding: 50px 0 30px;
+  }
+}

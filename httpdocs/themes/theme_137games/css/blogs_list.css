@@ -164,3 +164,21 @@
 .news-block .over-box h3 a:hover {
   color: var(--main-blue);
 }
+
+@media (max-width: 480px) {
+  .path-blogs .view-content {
+    padding: 50px 0 30px;
+  }
+
+  .news-block .over-box h3 {
+    font-size: 16px;
+  }
+
+  .news-block .over-box {
+    padding: 10px 15px;
+  }
+
+  .news-block {
+    margin-bottom: 15px;
+  }
+}

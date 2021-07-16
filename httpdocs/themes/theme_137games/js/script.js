@@ -7,3 +7,13 @@ $(window).scroll(function() {
     $('.header-fix').removeClass('active');
   }
 });
+
+$('.btn-menu-mobile').click(function (e) {
+  e.preventDefault();
+  $('#header-mobile, .bg-main-menu-mb').addClass('active');
+});
+
+$('.bg-main-menu-mb').click(function (e) {
+  e.preventDefault();
+  $('#header-mobile, .bg-main-menu-mb').removeClass('active');
+});

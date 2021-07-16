@@ -4,10 +4,10 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-RG25Y7TBPP');
 </script>
 <!-- Global site tag (gtag.js) - Google Analytics -->
+{{ attach_library('theme_137games/fontawesome') }}
 <header>
   {# Header fix top #}
   <div class="header-fix">
@@ -15,8 +15,11 @@
       <div class="logo">
         <a href="{{ url('<front>') }}"><img src="{{ logo }}" alt="logo"></a>
       </div>
-      <div class="main-menu">
+      <div class="main-menu d-none d-lg-block">
         {{ drupal_menu('main-menu') }}
+      </div>
+      <div class="btn-menu-mobile d-lg-none d-block">
+        <i class="fad fa-bars"></i>
       </div>
     </div>
   </div>
@@ -26,11 +29,23 @@
       <div class="logo">
         <a href="{{ url('<front>') }}"><img src="{{ logo }}" alt="logo"></a>
       </div>
-      <div class="main-menu">
+      <div class="main-menu d-none d-lg-block">
         {{ drupal_menu('main-menu') }}
+      </div>
+      <div class="btn-menu-mobile d-lg-none d-block">
+        <i class="fad fa-bars"></i>
       </div>
     </div>
   </div>
+  <div id="header-mobile" class="d-lg-none d-block">
+    <div class="logo">
+      <a href="{{ url('<front>') }}"><img src="{{ logo }}" alt="logo"></a>
+    </div>
+    <div class="main-menu-mobile">
+      {{ drupal_menu('main-menu') }}
+    </div>
+  </div>
+  <div class="bg-main-menu-mb d-lg-none d-block"></div>
 </header>
 
 

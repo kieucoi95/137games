@@ -133,7 +133,7 @@
 /* Section1 */
 #section1 {
   background: var(--main-black);
-  padding: 100px 0;
+  padding: 50px 0;
   background-image: url(../images/pattern-1-dark.png);
   background-repeat: no-repeat;
   background-position: bottom;
@@ -390,4 +390,121 @@
 
 #section5 .block_title {
   margin-bottom: 4rem;
+}
+
+/* ================== Resposive =================== */
+@media (max-width: 1340px) {
+  #home_banner .swiper-slide {
+    padding: 150px 0px 180px;
+  }
+
+  .auto-container h2 {
+    font-size: 84px;
+    max-width: 80%;
+    margin: 0 auto 30px;
+  }
+
+  .games_teaser .info {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 1023px) {
+  #home_banner .swiper-slide {
+    padding: 100px 0px 130px;
+  }
+
+  .auto-container h2 {
+    font-size: 64px;
+  }
+
+  .btn-title {
+    padding: 10px 30px;
+    font-size: 14px;
+  }
+
+  #section1 .img {
+    margin-bottom: 20px;
+  }
+
+  .games_teaser .info .logo {
+    width: 70px;
+    height: 70px;
+  }
+
+  .games_teaser h2.node_title {
+    font-size: 16px;
+  }
+
+  #home_our_team:hover .swiper-button-prev, #home_our_team:hover .swiper-button-next {
+    display: none;
+  }
+
+}
+
+@media (max-width: 767px) {
+  #home_banner .swiper-slide {
+    padding: 80px 0px 110px;
+  }
+
+  .auto-container h2 {
+    font-size: 48px;
+  }
+
+  #home_banner .swiper-button-prev, #home_banner .swiper-button-next {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  #section1 .cta {
+    justify-content: space-between;
+  }
+
+  #section1 .cta a img {
+    margin: 0;
+  }
+
+  #section3 .swiper-slide .avatar {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  #section3 .swiper-slide .img {
+    margin: 0 0 20px;
+    width: 120px;
+  }
+
+  #section3 .block_title {
+    margin-bottom: 2rem;
+  }
+
+  #section3 .swiper-slide .inner {
+    width: 100%;
+    text-align: center;
+  }
+
+  #section4 .swiper-slide {
+    padding: 20px 15px;
+  }
+
+  #section5 .col-md-4.views-row {
+    margin-bottom: 15px;
+  }
+
+  #section5 {
+    padding-bottom: 50px;
+  }
+
+  #section3 {
+    padding: 50px 0;
+  }
+
+  #section2 .count {
+    font-size: 30px;
+  }
+
+  #section2 .item img {
+    max-height: 70px;
+  }
 }

@@ -54,3 +54,58 @@
   margin: 0 -15px;
   flex-wrap: wrap;
 }
+
+@media (max-width: 480px) {
+  .node_header {
+    margin: 20px 0 0;
+  }
+
+  .node_header .game_logo {
+    margin: 0 auto;
+    width: 55%;
+  }
+
+  .node_header {
+    padding: 15px;
+  }
+
+  .node_header .info {
+    width: 45%;
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .node_header .node_title {
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: inherit;
+    margin-bottom: 10px;
+  }
+
+  .node_header .link_download img {
+    height: auto;
+  }
+
+  .node_header .link_download a:first-child {
+    margin-bottom: 10px;
+    display: inline-block;
+  }
+
+  .node_body {
+    padding: 15px;
+  }
+
+  .similar_games .block_title {
+    margin-bottom: 30px;
+  }
+
+  .similar_games {
+    margin-bottom: 50px;
+  }
+
+  .similar_games .col-md-4.views-row {
+    margin-bottom: 15px;
+  }
+}

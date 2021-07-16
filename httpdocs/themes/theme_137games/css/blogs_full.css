@@ -59,3 +59,24 @@ h1.node_title {
 blockquote {
   background: var(--main-bg);
 }
+
+@media (max-width: 480px) {
+  .page-node-type-article article {
+    margin: 50px 0;
+  }
+
+  .page-node-type-article article .blog-content {
+    padding: 15px;
+  }
+
+  h1.node_title {
+    font-size: 28px;
+    text-transform: none;
+    line-height: normal;
+    letter-spacing: normal;
+  }
+
+  .node_header .info {
+    font-size: 14px;
+  }
+}

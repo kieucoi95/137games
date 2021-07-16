@@ -90,3 +90,37 @@ h1.page_title {
   text-align: center;
   width: 100%;
 }
+
+@media (max-width: 480px) {
+  .block_contact {
+    margin: 50px auto;
+    padding: 15px;
+  }
+
+  h1.page_title {
+    font-size: 28px;
+  }
+
+  .block_contact .form-item-name, .block_contact .form-item-email {
+    width: 100%;
+  }
+
+  .form-item, .form-actions {
+    margin: 0 0 15px;
+  }
+
+  .block_contact input:not(.form-submit), .block_contact textarea {
+    height: 40px;
+    padding: 0 15px;
+  }
+
+  .block_contact textarea {
+    height: 120px;
+    padding: 0 15px;
+  }
+
+  .block_contact #edit-actions input {
+    height: 40px;
+    font-size: 20px;
+  }
+}
