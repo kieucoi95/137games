@@ -5,7 +5,7 @@
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => 'ec24be042405f269682bc5aac91b6d9e3172b6c0',
+        'reference' => '044176d4d41a3664c217cca06b03646bcf40ec1c',
         'name' => 'drupal/recommended-project',
         'dev' => true,
     ),
@@ -874,7 +874,7 @@
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => 'ec24be042405f269682bc5aac91b6d9e3172b6c0',
+            'reference' => '044176d4d41a3664c217cca06b03646bcf40ec1c',
             'dev_requirement' => false,
         ),
         'drupal/responsive_image' => array(
@@ -1062,6 +1062,15 @@
             'replaced' => array(
                 0 => '8.9.16',
             ),
+        ),
+        'drupal/xmlsitemap' => array(
+            'pretty_version' => '1.0.0',
+            'version' => '1.0.0.0',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../httpdocs/modules/contrib/xmlsitemap',
+            'aliases' => array(),
+            'reference' => '8.x-1.0',
+            'dev_requirement' => false,
         ),
         'drush/drush' => array(
             'pretty_version' => '10.5.0',
