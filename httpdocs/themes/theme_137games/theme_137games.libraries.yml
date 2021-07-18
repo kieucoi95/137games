@@ -26,13 +26,6 @@ swiper:
   js:
     libraries/swiper/swiper-bundle.js: {}
 
-aos:
-  css:
-    theme:
-      libraries/aos/aos.css: {}
-  js:
-    libraries/aos/aos.js: {}
-
 front_page:
   css:
     theme:
