@@ -5,7 +5,7 @@
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => '3f8d073fd2fbc1450f01755b42560a6394b490f9',
+        'reference' => 'ec24be042405f269682bc5aac91b6d9e3172b6c0',
         'name' => 'drupal/recommended-project',
         'dev' => true,
     ),
@@ -760,6 +760,15 @@
                 0 => '8.9.16',
             ),
         ),
+        'drupal/metatag' => array(
+            'pretty_version' => '1.16.0',
+            'version' => '1.16.0.0',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../httpdocs/modules/contrib/metatag',
+            'aliases' => array(),
+            'reference' => '8.x-1.16',
+            'dev_requirement' => false,
+        ),
         'drupal/migrate' => array(
             'dev_requirement' => false,
             'replaced' => array(
@@ -865,7 +874,7 @@
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => '3f8d073fd2fbc1450f01755b42560a6394b490f9',
+            'reference' => 'ec24be042405f269682bc5aac91b6d9e3172b6c0',
             'dev_requirement' => false,
         ),
         'drupal/responsive_image' => array(
