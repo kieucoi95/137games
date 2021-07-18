@@ -133,7 +133,7 @@
 /* Section1 */
 #section1 {
   background: var(--main-black);
-  padding: 50px 0;
+  padding: 100px 0;
   background-image: url(../images/pattern-1-dark.png);
   background-repeat: no-repeat;
   background-position: bottom;

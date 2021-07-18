@@ -177,6 +177,7 @@ h2.block_title:before {
 
 #header .main-menu ul li a:hover, .header-fix .main-menu ul li a:hover {
   opacity: 1;
+  color: var(--main-white);
 }
 
 #header .main-menu ul li a:hover::before, .header-fix .main-menu ul li a:hover::before {
