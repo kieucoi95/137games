@@ -1,14 +1,15 @@
-.page-node-type-article {
+.page-node-type-article,
+.page-node-type-page {
   background: var(--main-bg);
 }
 
 
-.page-node-type-article article {
+article {
   background: var(--main-black);
   margin: 100px 0;
 }
 
-.page-node-type-article article .blog-content {
+article .blog-content {
   padding: 30px;
 }
 
@@ -61,11 +62,11 @@ blockquote {
 }
 
 @media (max-width: 480px) {
-  .page-node-type-article article {
+  article {
     margin: 50px 0;
   }
 
-  .page-node-type-article article .blog-content {
+  article .blog-content {
     padding: 15px;
   }
 
