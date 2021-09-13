@@ -22,6 +22,8 @@
         "drupal/core-project-message": "^8.8",
         "drupal/core-recommended": "^8.8",
         "drupal/devel": "^2.1",
+        "drupal/gin": "^3.0@alpha",
+        "drupal/gin_toolbar": "^1.0@beta",
         "drupal/google_analytics": "^3.1",
         "drupal/google_tag": "^1.4",
         "drupal/menu_link_attributes": "^1.2",
@@ -32,7 +34,7 @@
         "drupal/smtp": "^1.0",
         "drupal/twig_tweak": "^2.9",
         "drupal/webform": "^6.0",
-        "drupal/xmlsitemap": "^1.0",
+        "drupal/xmlsitemap": "^1.1",
         "drush/drush": "^10.5"
     },
     "conflict": {
