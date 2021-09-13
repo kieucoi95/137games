@@ -310,9 +310,25 @@ footer .link-ft ul li a:hover {
   visibility: visible;
 }
 
+.ft-logo img {
+  max-height: 80px;
+}
+
 
 @media (max-width: 480px) {
   .block_title {
     font-size: 28px;
+  }
+
+  .link-ft ul.menu {
+    padding: 0;
+  }
+
+  footer .link-ft ul.menu li a {
+    color: #fff;
+  }
+
+  footer .link-ft ul.menu li a:hover {
+    color: var(--main-blue);
   }
 }
